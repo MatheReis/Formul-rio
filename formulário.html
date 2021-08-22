@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rei="stylesheet" type="text/css" href="formulário.css" media="scrim"
+    <header>
+      </header> <title>Cadastro</title>
+</head>
+<body>
+    
+
+    <div>
+        <h1>Cadastro de Clientes</h1>
+        <p>Complete as informações a seguir!<p>
+        <br>
+     </div>
+ 
+       <form>
+         <fieldset class="grupo">
+             <div>
+                 <label for="nome"><strong>Nome Completo</strong></label>
+                 <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="sobrenome"><strong>Número de Telefone</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome"required>
+                </div>
+         </fieldset>
+                
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div> 
+              
+            <div class="campo">
+                <label><strong>Qual setor da economia você trabalha?</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>Serviços
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="backend">Comércio
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="fullstack">Indústria
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="one">Construção Civil
+                <label>
+                    <input type="radio" name="devweb" value="nine">Agropecuária
+                <label>
+                    <input type="radio" name="devweb" value="eight">Outros
+                </label>   
+            </div>
+
+            <div>
+                <label for="Preguiça"><strong>Renda per capita</strong></label>
+                <select id="senioridade">
+                <option selected disabled value="">Até R$ 1000</option>    
+                <option>Até R$ 2500</option>    
+                <option>Até R$ 5000</option>
+                <option>Superior á R$ 8000</option>
+                </select>
+            </div>
+             
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>Selecione os principais meios de comunição que você utiliza:</strong> </label><br>
+                   <input name="HTML" value="HTML" type="checkbox">Tv/Rádio
+                   <input name="javaScript" value="JS" type="checkbox">Redes Sociais 
+                   <input name="CSS" value="HTML" type="checkbox">Telefone fixo/celular
+                   <input name="C#" value="HTML" type="checkbox">Jornal/revistas
+                   <input name="PHP" value="HTML" type="checkbox">Sites de Notícias
+                   <input name="Python" value="HTML" type="checkbox">Outros
+                </div>
+            </fieldset>
+
+                <div>
+                    <br>
+                    <label><strong>Conte um pouco mais sobre a experiência em nosso site:</strong> </label>
+                    <textarea row="6" style="width: 26em" id="experiência" nome="experiência"></textarea>
+                </div>
+
+                <button class="botao"type="submit">Concluído</button>
+
+               </form>
+</body>
+</html>
+ <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+#título{
+    font-family: sans-serif;
+    color: #0794a7;
+    margin-left: 7%;
+}
+#subtítulo{
+    font-family: sans-serif;
+    color:#345eb8;
+    margin-left: 10%;
+}
+
+fieldset{
+    border: 0;
+}
+
+body{
+    background-color: #f0f8ff;
+    font-family: sans-serif;
+    font-size: 1em;
+    color:#e01608;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    border: 1px solid;
+    background-color: #e0ca02;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+      }
+
+imput, select, textarea, button{
+    border-radius: 5px;
+}
+
+.campo{
+    margin-bottom: 1em;
+}
+
+.campo label{
+    margin-bottom: 0.2em;
+    color:#e01608;
+    display: block;
+}
+
+fieldset.grupo .campo{
+      float: left;
+      margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea{
+    padding: 0.2em;
+    border: 1px solid #184dc0;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+.campo select option{
+   padding-right: 1em;
+}
+.campo input:focus, .campo select:focus, .campo textarea:focus{
+    background: #e0e0f8;
+}
+.botao {
+    font-size: 1.2em;
+    background: #04aa3c;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(43, 41, 41, 0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: relative;
+    top: 100%;
+    left: 40%;
+    height: 30%;
+    margin-right: -40%;
+    transform: translate(-40%,50%);
+}
+.botao:hover{
+    background: #ccbbff;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+#check{
+    display: inline-block;
+}
+</style>
+
